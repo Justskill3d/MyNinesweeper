@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://b74jf4togj5ir"]
+
+[ext_resource type="TileSet" uid="uid://bmqlkdtd6duqw" path="res://Scenes/new_tile_set.tres" id="1_ok4o6"]
+[ext_resource type="Script" path="res://Scripts/board_generation_script.gd" id="2_1bi18"]
+
+[node name="Board" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+position = Vector2(-1, 0)
+tile_set = ExtResource("1_ok4o6")
+format = 2
+layer_0/name = "Background"
+layer_1/name = "Monster"
+layer_1/tile_data = PackedInt32Array()
+layer_2/name = "Numbers"
+layer_2/tile_data = PackedInt32Array()
+layer_3/name = "Hidden"
+layer_3/tile_data = PackedInt32Array()
+layer_4/name = "Flags"
+layer_4/tile_data = PackedInt32Array()
+layer_5/name = "Mouse"
+layer_5/tile_data = PackedInt32Array()
+script = ExtResource("2_1bi18")

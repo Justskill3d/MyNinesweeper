@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://cawl2nqecmjmy"]
+
+[node name="Field" type="Node2D"]
+
+[node name="Node" type="Node" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
